@@ -1,0 +1,91 @@
+* {
+    display: flexbox;
+}
+
+body {
+    background-color: #F3F3F3;
+    width: 100vw;
+}
+
+/* Para Mobiles */
+@media screen and (max-width: 375px) {
+    header {
+        /* Quanto a posição */
+        position: fixed;
+        /* Quanto ao tamanho*/
+        width: 100%;
+        height: 80px;
+    }
+
+    .topo {
+        /* Quanto a posição */
+        position: relative;
+        /* Quanto ao tamanho */
+        width: 100%;
+        height: 100%;
+        /* Quanto ao display*/
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* Quanto ao estilo */
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+        background-color: #FFFFFF;
+    }
+
+    footer {
+        /* Quanto a posição */
+        position: fixed;
+        left: auto;
+        bottom: 0;
+        /* Quanto ao tamanho */
+        width: 100%;
+        height: 80px;
+    }
+
+    .baixo {
+        /* Quanto ao tamanho */
+        width: 100%;
+        height: 100%;
+        /* Quanto ao display*/
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* Quanto ao estilo*/
+        background-color: #FFFFFF;
+    }
+}
+
+/* Tratamento de Imagens e textos */
+
+.topo img {
+    margin-left: 21px;
+    width: 75px;
+    height: 53px;
+}
+
+.icone-topo {
+    margin-right: 21px;
+    font-size: 45px;
+}
+
+.icone-baixo {
+    font-size: 26px;
+}
+
+input {
+    border: 0;
+    width: 89.45%;
+    height: 100%;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+}
+
+::placeholder {
+    font-family: Roboto;
+    color: #000000;
+    opacity: 1; /* Corrige a opacidade no navegador Firefox*/
+}
