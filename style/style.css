@@ -1,3 +1,5 @@
+/* Configurações Gerais da Página */
+
 * {
     display: flexbox;
 }
@@ -7,8 +9,12 @@ body {
     width: 100vw;
 }
 
-/* Para Mobiles */
+/* --- Para Mobiles --- */
+
 @media screen and (max-width: 375px) {
+
+    /* Header */
+
     header {
         /* Quanto a posição */
         position: fixed;
@@ -19,7 +25,7 @@ body {
 
     .topo {
         /* Quanto a posição */
-        position: relative;
+        position: absolute;
         /* Quanto ao tamanho */
         width: 100%;
         height: 100%;
@@ -31,6 +37,19 @@ body {
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
         background-color: #FFFFFF;
     }
+
+    /* main */
+
+    main {}
+
+    .container-mensagem {
+        position: absolute;
+        top: 106px;
+        width: 100%;
+        height: 500px;
+    }
+
+    /* Footer */
 
     footer {
         /* Quanto a posição */
@@ -55,7 +74,7 @@ body {
     }
 }
 
-/* Tratamento de Imagens e textos */
+/* --- Tratamento de Imagens e textos --- */
 
 .topo img {
     margin-left: 21px;
@@ -74,8 +93,8 @@ body {
 
 input {
     border: 0;
-    width: 89.45%;
-    height: 100%;
+    width: 80%;
+    height: 90%;
     font-style: italic;
     font-weight: 400;
     font-size: 18px;
@@ -87,5 +106,60 @@ input {
 ::placeholder {
     font-family: Roboto;
     color: #000000;
-    opacity: 1; /* Corrige a opacidade no navegador Firefox*/
+    /* Corrige a opacidade no navegador Firefox*/
+    opacity: 1;
+}
+
+
+.strong {
+    font-weight: bolder;
+    margin-right: 7px;
+}
+
+.hora {
+    color: #AAAAAA;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    margin-right: 7px;
+    margin-left: 8px;
+
+}
+
+/* --- Tipos de Mensagens --- */
+
+.Entrou, .Saiu {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    background-color: #DCDCDC;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 4px;
+}
+
+.Reservadamente {
+    background-color: #FFDEDE;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 4px;
+}
+
+.mensagemNormal {
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 4px;
+}
+
+/* --- Esconder --- */
+
+.escondido {
+    display: none;
 }
