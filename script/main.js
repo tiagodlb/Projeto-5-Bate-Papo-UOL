@@ -18,7 +18,7 @@ function buscarMensagens() {
     console.log("buscarMensagens deu certo!")
     promise.then(carregarMensagens)
     promise.catch(tratarErros);
-    setInterval(() => checkIfUserOnline(nomeUsuario), 500000);
+    setInterval(() => checkIfUserOnline(nomeUsuario), 5000);
 }
 
 function carregarMensagens(resposta) {
